@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  sectask:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: sectask
+    image: sectask
+    restart: always
+    ports:
+      # expose 4011 listen 4002
+      - "4012:4002"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+        tag: "{{.Name}}"

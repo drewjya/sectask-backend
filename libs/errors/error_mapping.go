@@ -1,0 +1,31 @@
+package errors
+
+const (
+	InvalidBodyRequest       = "invalid_body_request"
+	InvalidQueryParam        = "invalid_query_param"
+	InternalDBError          = "internal_db_error"
+	InvalidWSBody            = "invalid_ws_body"
+	FailedUpgradeWebsocket   = "failed_upgrade_websocket"
+	HeaderNotPresent         = "header_not_present"
+	ExpiredToken             = "expired_token"
+	Unauthorized             = "unauthorized"
+	InvalidRole              = "invalid_role"
+	InvalidParameter         = "invalid_parameter"
+	InsufficientBalance      = "insufficient_balance"
+	UserNotFound             = "user_not_found"
+	ClientCodeNotFound       = "client_code_not_found"
+	InvalidToken             = "invalid_token"
+	FailedPublishOrderStatus = "failed_publish_order_status"
+	FailedSetOrderStatus     = "failed_set_order_status"
+	InvalidAuthentication    = "invalid_authentication"
+	CloseConnection          = "close_connection"
+
+	FailWithdrawALl        = "fail_withdraw_all"
+	FailAmend              = "fail_amend"
+	EmptyOrders            = "You dont have any orders"
+	PleaseReloginSamuelMSG = "Please relogin samuel !!!"
+	PleaseReinputPINMSG    = "Please reinput your pin !!!"
+	MaintenanceSamuel      = "Maintenance in server samuel"
+	ErrValidateTokenMSG    = "Error verify your token !!!"
+	ErrBasicAuthMSG        = "Error basic auth !!!"
+)
